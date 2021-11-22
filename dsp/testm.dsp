@@ -1,4 +1,4 @@
-// tosc.dsp - test simple oscillator + MIDI bindings
+// testm.dsp - test simple oscillator + MIDI bindings
 import("stdfaust.lib");
 process = g * a * os.oscrs(f*b) <: _,_;
 a = hslider("gain [midi:ctrl 7]",1,0,1,0.001);
